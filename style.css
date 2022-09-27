@@ -7,20 +7,21 @@
 }
 
 .body{
+    background-color: #002860;
+    width: 100%;
+}
+.container-body{
     background-color:#002860 ;
-    width:100%;
+    /* width:100%; */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 25px;
 }
 .nav-brand{
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 2em;
-    size: large;
-
 }
 
 .form-header{
@@ -50,7 +51,7 @@
     margin-bottom: 20px;
 }
 .label{
-    font-size: 20px;
+    font-size: 17px;
 
 }
 .input{
@@ -77,6 +78,9 @@
     font-size: large;
     font-weight: 600;
 }
+.submit:hover{
+    color: rgb(221, 32, 127);
+}
 
 .footer{
     display: flex;
@@ -87,15 +91,23 @@
 
 }
 .login:hover{
-    color: #fff;
+    color: rgb(221, 32, 127);
+    /* color: #fff; */
 }
 
-@media (max-width: 390px){
+@media (max-width: 412px){
     .body{
-        max-width: 80% ;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
     }
     .form{
-        width: 25rem;
+        width: 20rem;
+    }
+    .input{
+        width: 15rem;
     }
     .login:hover{
         background-color: #fff;
