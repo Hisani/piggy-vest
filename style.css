@@ -90,8 +90,10 @@
     color: #fff;
 }
 
-@media (max-width: 769px){
-
+@media (max-width: 390px){
+    .body{
+        max-width: 80% ;
+    }
     .form{
         width: 25rem;
     }
